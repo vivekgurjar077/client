@@ -1,0 +1,298 @@
+
+.gigs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #121212;
+ 
+  .container {
+    width: 1400px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .breadcrumbs {
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: #000000;
+    }
+
+    h1 {
+    }
+
+    p {
+      color: #ffffff;
+      font-weight: 300;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #ffffff;
+        font-weight: 300;
+
+        input{
+          padding: 5px;
+          border: 1px solid lightgrey;
+          border-radius: 5px;
+          outline: none;
+
+          &::placeholder{
+            color: #999;
+          }
+        }
+
+        button{
+          padding: 5px 10px;
+          background-color: #0F63E0;
+          color: white;
+          border: none;
+          font-weight: 500;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+      }
+
+      .right {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .sortBy {
+          color: #555;
+          font-weight: 300;
+        }
+
+        .sortType {
+          font-weight: 500;
+        }
+
+        img {
+          width: 15px;
+          cursor: pointer;
+        }
+
+        .rightMenu {
+          padding: 20px;
+          background-color: white;
+          border: 0.5px solid lightgrey;
+          border-radius: 5px;
+          position: absolute;
+          top: 30px;
+          right: 0;
+          z-index: 9;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          color: #555;
+
+          span {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.search {
+  background-color: transparent;
+  border-radius:10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 500px;
+
+  .searchInput {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: white;
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      width: 320px;
+      height: 30px;
+      margin: 10px;
+
+      &::placeholder {
+        color: gray;
+      }
+    }
+  }
+
+  button {
+   
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: #0F63E0;
+    border-radius: 10px;
+    color: white;
+    align-self: flex-end;
+    cursor: pointer;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+        .search {
+          background-color: transparent;
+          border-radius:10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          overflow: hidden;
+          width:360px;
+          .searchInput {
+            display: flex;
+            align-items: center;
+            color: aliceblue;
+            gap: 10px;
+            width: 250px;
+            border-radius: 10px;  
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            margin-left: 7px;
+            img {
+              width: 20px;
+              height: 20px;
+              margin: 10px;
+              color:white;
+            }
+  
+            input {
+              border: none;
+              outline: none;
+              width: 190px;
+              height: 30px;
+              margin: 10px;
+              
+              background-color: rgb(255, 255, 255);
+              &::placeholder {
+                color: black;
+              }
+            }
+          }
+  
+          button {
+           
+            width: 85px;
+            height: 55px;
+            border: none;
+            background-color: #0F63E0;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            align-self: flex-end;
+            cursor: pointer;
+            align-items: center;
+            margin-right: 7px;
+          }
+        }
+        .menu {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          
+          width: 360px;
+          .left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            font-weight: 300;
+    
+            input{
+              padding: 5px;
+              border: 1px solid lightgrey;
+              border-radius: 5px;
+              outline: none;
+              width: 100px;
+              &::placeholder{
+                color: #999;
+              }
+            }
+    
+            button{
+              padding: 5px 10px;
+              background-color: #0F63E0;
+              color: white;
+              border: none;
+              font-weight: 500;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+    
+          }
+    
+          .right {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+    
+            .sortBy {
+              color: #555;
+              font-weight: 300;
+            }
+    
+            .sortType {
+              font-weight: 500;
+            }
+    
+            img {
+              width: 15px;
+              cursor: pointer;
+            }
+    
+            .rightMenu {
+              padding: 20px;
+              background-color: white;
+              border: 0.5px solid lightgrey;
+              border-radius: 5px;
+              position: absolute;
+              top: 30px;
+              right: 0;
+              z-index: 9;
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              color: #555;
+    
+              span {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+    
+
+  
+}

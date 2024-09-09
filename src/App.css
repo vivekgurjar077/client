@@ -1,0 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
